@@ -6,11 +6,13 @@
 body {
   font-family: "Space Grotesk", sans-serif;
   margin: 0;
+  background-color: var(--main-bg-color);
 }
 
 #main {
   display: flex;
   height: 100vh;
+  justify-content: center;
 }
 
 div {
@@ -36,22 +38,19 @@ h2 {
 }
 
 h2 span {
-  animation: flickerAnimation 0.5s infinite;
+  animation: 1s flickerAnimation infinite;
   animation-delay: 2s;
 }
 
 .left {
   background-color: var(--primary-color);
   color: var(--main-bg-color);
-  flex: 5;
   justify-content: right;
   z-index: 2;
 }
 
 .right {
-  background-color: var(--main-bg-color);
   color: var(--primary-color);
-  flex: 3;
 }
 
 .right-cover {
@@ -59,9 +58,10 @@ h2 span {
   width: 6rem;
   position: absolute;
   height: 100vh;
-  width: 37.5vw;
+  width: 100vw;
+  left: -50vw;
   z-index: 1;
-  animation: 3s cubic-bezier(0.73, 0.05, 0.38, 0.98) 0s 1 slide-out;
+  animation: 3.5s cubic-bezier(0.55, 0.08, 0.02, 0.83) 0s 1 slide-out;
 }
 
 .social {
@@ -78,10 +78,10 @@ h2 span {
 
 @keyframes slide-out {
   0% {
-    right: 0;
+    left: 0vw;
   }
   100% {
-    right: 100vw;
+    left: -50vw;
   }
 }
 
