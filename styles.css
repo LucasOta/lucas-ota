@@ -1,0 +1,98 @@
+:root {
+  --main-bg-color: #e3e7e8;
+  --primary-color: #366f4e;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  margin: 0;
+}
+
+#main {
+  display: flex;
+  height: 100vh;
+}
+
+div {
+  display: flex;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 20vw;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+h2 {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  transform: rotate(180deg);
+  margin: 0;
+  writing-mode: vertical-rl;
+}
+
+h2 span {
+  animation: flickerAnimation 0.5s infinite;
+  animation-delay: 2s;
+}
+
+.left {
+  background-color: var(--primary-color);
+  color: var(--main-bg-color);
+  flex: 5;
+  justify-content: right;
+  z-index: 2;
+}
+
+.right {
+  background-color: var(--main-bg-color);
+  color: var(--primary-color);
+  flex: 3;
+}
+
+.right-cover {
+  background: var(--primary-color);
+  width: 6rem;
+  position: absolute;
+  height: 100vh;
+  width: 37.5vw;
+  z-index: 1;
+  animation: 3s cubic-bezier(0.73, 0.05, 0.38, 0.98) 0s 1 slide-out;
+}
+
+.social {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.social img {
+  height: 2rem;
+}
+
+@keyframes slide-out {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: 100vw;
+  }
+}
+
+@keyframes flickerAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
