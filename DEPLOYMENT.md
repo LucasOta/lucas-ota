@@ -4,7 +4,7 @@
 
 ### 1. Configure GitHub Pages in repository
 
-1. Go to your repository on GitHub: `https://github.com/your-username/lucas-ota`
+1. Go to your repository on GitHub: `https://github.com/LucasOta/lucas-ota`
 2. Go to **Settings** → **Pages**
 3. Under **Source**, select **GitHub Actions**
 4. Save changes
@@ -23,13 +23,13 @@ The workflow will run automatically and deploy your site.
 
 #### On GitHub:
 1. Go to **Settings** → **Pages**
-2. Under **Custom domain**, enter your domain: `yourdomain.com`
+2. Under **Custom domain**, enter your domain: `lucasota.com`
 3. Check **Enforce HTTPS**
 
 #### On your DNS provider:
 Configure these DNS records:
 
-**For main domain (yourdomain.com):**
+**For main domain (lucasota.com):**
 ```
 Type: A
 Name: @
@@ -48,8 +48,8 @@ Value: your-username.github.io
 
 ### 4. Verify deployment
 
-- Your site will be available at: `https://your-username.github.io/lucas-ota/`
-- With custom domain: `https://yourdomain.com`
+- Your site will be available at: `https://lucasota.github.io/lucas-ota/`
+- With custom domain: `https://lucasota.com`
 
 ## Useful commands
 
@@ -88,19 +88,3 @@ If deployment fails due to permissions:
 1. Check logs in the **Actions** tab
 2. Make sure `npm run build` works locally
 3. Verify Node.js versions in the workflow
-
-## Deployment alternatives
-
-### Vercel (Recommended for more features)
-
-1. Connect your repository at [vercel.com](https://vercel.com)
-2. Automatic deployment on every push
-3. Free custom domain
-4. Edge functions available
-
-### Netlify
-
-1. Connect your repository at [netlify.com](https://netlify.com)
-2. Build command: `npm run build`
-3. Publish directory: `dist`
-4. Free custom domain
