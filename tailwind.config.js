@@ -10,7 +10,7 @@ export default {
         background: '#10100E',
         primary: '#DEDED9',
         secondary: '#606055',
-        accent: '#3f5c47',
+        accent: '#88E088',
       },
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],

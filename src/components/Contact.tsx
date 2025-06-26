@@ -38,7 +38,7 @@ export default function Contact() {
           Let's Connect
         </motion.h2>
         <motion.p 
-          className="text-lg text-secondary mb-12 max-w-2xl mx-auto"
+          className="text-lg mb-12 max-w-2xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}

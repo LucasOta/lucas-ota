@@ -22,11 +22,11 @@ export default function About() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
           >
-            <p className="text-lg leading-relaxed mb-6 text-secondary">
+            <p className="text-lg leading-relaxed mb-6">
               I'm a developer who believes that the best products come from close collaboration between tech and product. 
               My background is technical, but I'm always thinking about the bigger picture — the users, the business, and the impact.
             </p>
-            <p className="text-lg leading-relaxed text-secondary">
+            <p className="text-lg leading-relaxed">
               Based in Argentina, working remotely with international teams. On a mission to make every pull request count.
             </p>
           </motion.div>

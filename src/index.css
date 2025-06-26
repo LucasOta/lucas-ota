@@ -11,12 +11,12 @@
 
   /* Custom text selection */
   ::selection {
-    background-color: #3f5c47; /* accent color */
-    color: #FFFFE3; /* primary color */
+    background-color: #606055; /* secondary color */
+    color: #DEDED9; /* primary color */
   }
 
   ::-moz-selection {
-    background-color: #3f5c47; /* accent color */
-    color: #FFFFE3; /* primary color */
+    background-color: #606055; /* secondary color */
+    color: #DEDED9; /* primary color */
   }
 }
