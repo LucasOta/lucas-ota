@@ -1,8 +1,11 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 
 export default function Hero() {
+  const [showPhonetic, setShowPhonetic] = useState(false)
+
   return (
     <section className="min-h-screen flex items-center justify-center px-6 md:px-12">
       <div className="max-w-4xl mx-auto text-center">
@@ -13,7 +16,30 @@ export default function Hero() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           Hi, I'm{' '}
-          <span className="text-accent hover:text-accent/80 transition-colors duration-300">Lucas Otaño</span>{' '}
+          <span className="text-accent hover:text-accent/80 transition-colors duration-300">
+            Lucas Ota
+            <span 
+              className="relative inline-block cursor-help"
+              onMouseEnter={() => setShowPhonetic(true)}
+              onMouseLeave={() => setShowPhonetic(false)}
+            >
+              ñ
+              <motion.span
+                className="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-accent/90 text-background px-2 py-1 rounded text-sm font-normal whitespace-nowrap backdrop-blur-sm"
+                initial={{ opacity: 0, y: 10, scale: 0.8 }}
+                animate={{ 
+                  opacity: showPhonetic ? 1 : 0, 
+                  y: showPhonetic ? 0 : 10,
+                  scale: showPhonetic ? 1 : 0.8
+                }}
+                transition={{ duration: 0.2, ease: "easeOut" }}
+                style={{ pointerEvents: 'none' }}
+              >
+                /ˈɲoː/
+              </motion.span>
+            </span>
+            o
+          </span>{' '}
           —
         </motion.h1>
         <motion.h2 
