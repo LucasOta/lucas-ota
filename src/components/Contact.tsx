@@ -12,7 +12,7 @@ const socialLinks = [
   },
   {
     name: 'LinkedIn',
-    url: 'https://www.linkedin.com/in/lucas-mat%C3%ADas-ota%C3%B1o-363167172/',
+    url: 'https://www.linkedin.com/in/lucas-ota/',
     icon: Linkedin,
     description: "Let's connect professionally",
   },
