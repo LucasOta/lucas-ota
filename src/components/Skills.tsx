@@ -25,7 +25,7 @@ export default function Skills() {
           {skills.map((skill, index) => (
             <motion.span
               key={index}
-              className="px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent hover:bg-accent/20 hover:border-accent/40 transition-all duration-200 text-sm md:text-base font-medium cursor-default"
+              className="px-4 py-2 bg-accent/10 border border-accent/20 rounded-full text-accent hover:bg-accent/20 hover:border-accent/40 transition-all duration-200 text-sm md:text-base font-medium cursor-default backdrop-blur-light"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true, margin: "-100px" }}

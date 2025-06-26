@@ -20,3 +20,15 @@
     color: #DEDED9; /* primary color */
   }
 }
+
+@layer utilities {
+  .backdrop-blur-card {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  
+  .backdrop-blur-light {
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+  }
+}

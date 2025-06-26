@@ -72,7 +72,7 @@ export default function Experience() {
           {experiences.map((exp, index) => (
             <motion.div 
               key={index}
-              className="border border-accent/20 rounded-lg p-6 md:p-8 bg-background/30 hover:bg-background/50 hover:border-accent/40 transition-all duration-300"
+              className="border border-accent/20 rounded-lg p-6 md:p-8 bg-background/30 hover:bg-background/50 hover:border-accent/40 transition-all duration-300 backdrop-blur-card"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
