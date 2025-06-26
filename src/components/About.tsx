@@ -46,7 +46,7 @@ export default function About() {
               transition={{ duration: 0.3, ease: 'easeOut' }}
             >
               <img
-                src={`${import.meta.env.BASE_URL}me.webp`}
+                src="/me.webp"
                 alt='Lucas Otaño'
                 className='w-64 h-64 object-cover rounded-full shadow-lg border-4 border-accent/20 group-hover:border-accent/40 transition-colors duration-300'
               />
