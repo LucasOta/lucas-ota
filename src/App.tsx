@@ -7,7 +7,7 @@ import MouseSpotlight from './components/MouseSpotlight'
 
 function App() {
   return (
-    <div className="min-h-screen relative">
+    <div className='min-h-screen relative'>
       <MouseSpotlight />
       <Hero />
       <About />

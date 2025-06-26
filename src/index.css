@@ -6,18 +6,20 @@
 @layer base {
   body {
     @apply bg-background text-primary font-satoshi;
-    font-feature-settings: "rlig" 1, "calt" 1;
+    font-feature-settings:
+      'rlig' 1,
+      'calt' 1;
   }
 
   /* Custom text selection */
   ::selection {
     background-color: #606055; /* secondary color */
-    color: #DEDED9; /* primary color */
+    color: #deded9; /* primary color */
   }
 
   ::-moz-selection {
     background-color: #606055; /* secondary color */
-    color: #DEDED9; /* primary color */
+    color: #deded9; /* primary color */
   }
 }
 
@@ -26,7 +28,7 @@
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
   }
-  
+
   .backdrop-blur-light {
     backdrop-filter: blur(4px);
     -webkit-backdrop-filter: blur(4px);
