@@ -8,4 +8,15 @@
     @apply bg-background text-primary font-satoshi;
     font-feature-settings: "rlig" 1, "calt" 1;
   }
+
+  /* Custom text selection */
+  ::selection {
+    background-color: #3f5c47; /* accent color */
+    color: #FFFFE3; /* primary color */
+  }
+
+  ::-moz-selection {
+    background-color: #3f5c47; /* accent color */
+    color: #FFFFE3; /* primary color */
+  }
 }

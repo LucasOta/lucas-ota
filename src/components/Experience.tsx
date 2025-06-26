@@ -1,3 +1,7 @@
+'use client'
+
+import { motion } from 'framer-motion'
+
 const experiences = [
   {
     company: "CareHub",
@@ -55,16 +59,29 @@ export default function Experience() {
   return (
     <section className="py-20 px-6 md:px-12 bg-background/50">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Experience</h2>
+        <motion.h2 
+          className="text-3xl md:text-4xl font-bold mb-12 text-center"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
+          Experience
+        </motion.h2>
         <div className="space-y-8">
           {experiences.map((exp, index) => (
-            <div 
+            <motion.div 
               key={index}
-              className="border border-accent/20 rounded-lg p-6 md:p-8 bg-background/30 hover:bg-background/50 transition-colors"
+              className="border border-accent/20 rounded-lg p-6 md:p-8 bg-background/30 hover:bg-background/50 hover:border-accent/40 transition-all duration-300"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: index * 0.1, ease: "easeOut" }}
+              whileHover={{ scale: 1.02 }}
             >
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-semibold text-primary">{exp.position}</h3>
+                  <h3 className="text-xl md:text-2xl font-semibold text-primary hover:text-accent transition-colors duration-200">{exp.position}</h3>
                   <p className="text-lg text-accent font-medium">{exp.company}</p>
                 </div>
                 <span className="text-secondary font-medium mt-2 md:mt-0">{exp.period}</span>
@@ -77,7 +94,7 @@ export default function Experience() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
